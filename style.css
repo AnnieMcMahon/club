@@ -1,0 +1,146 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    min-height: 2rem;
+    width: 100%;
+    background-color: seagreen;
+}
+
+nav ul {
+    text-align: center;
+    margin-right: 2rem;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+nav a {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    top: 2rem;
+    padding: 2rem;
+    width: 100%;
+    background-image: url(./Images/banner-background.avif);
+    background-size: cover;
+    min-height: 15rem;
+}
+
+header h1 {
+    color: white;
+    padding: auto;
+    font-size: 3rem;
+    line-height: 15rem;
+}
+
+content {
+    position: relative;
+    top: 2rem;
+}
+
+.about {
+    background-color: seagreen;
+    padding: 2rem;
+}
+
+.about p {
+    max-width: 60%;
+    margin: auto;
+}
+
+.pictures {
+    background-color: tan;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.picture-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.picture-box img {
+    width: auto;
+    height: auto;
+
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    bottom: 0;
+    margin-top: 3rem;
+    text-align: left;
+    margin-left: 3rem;
+    background-color: tan;
+    line-height: 3;
+    margin: 4rem 0 0 0;
+    padding-left: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    nav li {
+        margin: 0 1rem;
+    }
+    
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    footer h4 {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .picture-box {
+        max-width: 100%;
+    }
+}
